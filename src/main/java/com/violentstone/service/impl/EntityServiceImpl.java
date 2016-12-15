@@ -1,6 +1,7 @@
-package com.violentstone.service;
+package com.violentstone.service.impl;
 
 import com.violentstone.dao.EntityDao;
+import com.violentstone.service.IEntityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +11,10 @@ import org.springframework.stereotype.Service;
  * +吾信 "猿" 乃一世变者
  * +你见到的这个玩意儿,就是吾在 2016/10/24 创造的作品
  * ********************************************************
- * +描述:
+ * +描述:关于service的实现类
  *********************************************************/
 @Service
-public class EntityServiceImpl implements IEntityService{
+public class EntityServiceImpl implements IEntityService {
 
     @Autowired
     private EntityDao entityDao;
